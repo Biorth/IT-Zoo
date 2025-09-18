@@ -22,7 +22,13 @@ class Seal(Animal):
 
 
 
+class Bird(Animal):
+    def speak(self):
+        return "Tweet!"
+    
+
+
 if __name__ == "__main__":
-    animals = [Dog("Burek"), Cat("Mruczek"), Seal("Pan Foczka")]
+    animals = [Dog("Burek"), Cat("Mruczek"), Bird("Tweety"), Seal("Pan Foczka")]
     for a in animals:
         print(f"{a.name}: {a.speak()}")
